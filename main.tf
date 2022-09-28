@@ -23,13 +23,3 @@ resource "aws_subnet" "subnet-3" {
     Name = "(AFTER)Terraform-Cloud-Test-1"
   }
 }
-
-resource "aws_subnet" "subnet-4" {
-  vpc_id = "vpc-05397ee1bcd1b5f72"
-  cidr_block = "10.10.8.0/24"
-  availability_zone =  "ap-northeast-2a"
-
-  tags = {
-    Name = "(AFTER)Terraform-Cloud-Test-2"
-  }
-}
